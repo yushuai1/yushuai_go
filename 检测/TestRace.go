@@ -1,0 +1,11 @@
+package main
+
+import "fmt"
+func main(){
+	a := 1
+	go func() {
+		a = 2
+	}()
+	a = 3
+	fmt.Println("a : ", a)
+}
